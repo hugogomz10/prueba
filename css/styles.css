@@ -5,7 +5,7 @@
 }
 
 .wrap{
-    width: 1200px;
+    width: 1400px;
     margin: 0px auto;
 }
 
@@ -23,7 +23,7 @@
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-    background-image: url('https://img.genial.ly/617b2efa5731b80019a0612f/84610116-fceb-4da3-b0b6-0103e2eb3b12.jpeg');
+    background-color: white;
     /*background-image: url('../images/Fondo.jpeg');*/
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -32,22 +32,43 @@
 
 /*Fuentes*/
 @font-face{
-    font-family: "BebasNeue";
-    src: url('fonts/BebasNeue.otf');
+    font-family: "GMXBlack";
+    src: url('fonts/GMX-Black.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face{
-    font-family: "Staatliches";
-    src: url('fonts/Staatliches.ttf');
+    font-family: "GMXBold";
+    src: url('fonts/GMX-Bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face{
-    font-family: "Roboto";
-    src: url('fonts/Roboto.ttf');
+    font-family: "MontserratSBold";
+    src: url('fonts/Montserrat-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "MontserratBold";
+    src: url('fonts/Montserrat-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "MontserratRegular";
+    src: url('fonts/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "MontserratLight";
+    src: url('fonts/Montserrat-Light.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -56,83 +77,57 @@
 .navbar{
     width: 100%;
     height: 64px;
-    background-color: #FFFFFF;
+    background-color: #691C32;
     font-weight: lighter;
     color: white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
 #logo{
     float: left;
-    width: 34%;
+    width: 36%;
     background: transparent;
-    font-family: "Staatliches";
-    font-weight: light;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
 #logo img{
     height: 64px;
-    text-align: center;
-    line-height: 64px;
-    font-size: 25px;
+    line-height: 66px;
 }
 
 #guide{
     float: left;
-    width: 64%;
+    width: 50%;
     height: 64px;
     background: transparent;
-    font-family: "BebasNeue";
     text-align: center;
 }
 
 #guide button{
-    font-family: "Staatliches";
-    font-size: 15px;
+    font-family: "GMXBlack";
+    font-size: 10px;
     display: inline-block;
-    line-height: 66px;
-    padding-left: 10px;
-    padding-right: 10px;
+    line-height: 64px;
+    padding-left: 5px;
+    padding-right: 5px;
     border: transparent;
     cursor: pointer;
     background: none;
-    color: #0D4D72;
+    color: white;
 }
 
 #guide button:hover{
-    background-color: #3da0d9;
-    box-shadow: 0px 0px 4px #22597a inset;
+    background-color: #B38E5D;
+    box-shadow: 3px 3px 10px #D4C19C inset;
 }
 
-/*#guide ul li{
-    font-size: 20px;
-    display: inline-block;
-    line-height: 64px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#guide ul li:last-child{
-    padding-right: none;
-}
-
-#guide ul li:hover{
-    background-color: #3da0d9;
-    box-shadow: 0px 0px 4px #22597a inset;
-}
-
-#guide ul li a{
-    display: block;
-    color: #0D4D72;
-    text-decoration: none;
-    transition: all 200ms;
-}*/
-
-/*Estilos Inicio*/
+/*ESTILOS INICIO*/
 .content{
     display: none;
     padding-top: 50px;
@@ -154,17 +149,18 @@
 }
 
 #title h2{
-    font-family: "Roboto";
+    font-family: "GMXBlack";
     font-size: 35px;
     padding-bottom: 10px;
 }
 
 #title p{
-    font-family: "Roboto";
+    font-family: "MontserratRegular";
     font-size: 25px;
+    text-align: center;
 }
 
-/*Estilos Guia Academica*/
+/*ESTILOS GUIA ACADEMICA*/
 .academic{
     display: none;
     padding-top: 50px;
@@ -180,10 +176,10 @@
     height: 530px;
 }
 
-/*Estilos Introduccion*/
+/*ESTILOS INTRODUCCION*/
 .intro{
     display: none;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 
@@ -194,7 +190,6 @@
 #unit{
     display: flex;
     width: 80%;
-    height: 500px;
     margin-left: 120px;
     align-items: center;
     justify-content: center;
@@ -202,20 +197,36 @@
     text-align: justify;
 }
 
-#unit p{
-    font-family: "Roboto";
-    font-size: 15px;
+#unit h3{
+    font-family: "GMXBold";
+    font-size: 20px;
+    padding-bottom: 15px;
 }
 
-#unit ul{
-    font-family: "Roboto";
-    font-size: 15px;
+#unit p{
+    font-family: "MontserratRegular";
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+#unit p:last-child{
+    padding-bottom: none;
+}
+
+#unit ol{
+    font-family: "MontserratRegular";
+    font-size: 13px;
+}
+
+#unit ol li{
+    margin: 0 0 0 3em;
+    padding: 0;
 }
 
 /*Estilos de los Conceptos Clave*/
 .concept{
     display: none;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 
@@ -226,34 +237,42 @@
 #concepts{
     display: flex;
     width: 80%;
-    height: 500px;
     margin-left: 120px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#concepts h3{
+    font-family: "GMXBold";
+    font-size: 20px;
+    padding-bottom: 15px;
 }
 
 /*Botones*/
 .btns{
     width: 100%;
+    height: 500px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .btns button{
-    width: 200px;
-    height: 50px;
-    font-family: "Roboto";
+    width: 300px;
+    height: 80px;
+    font-family: "MontserratBold";
     font-size: 15px;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     cursor: pointer;
-    background-color: #5ea7d1;
+    background-color: #691C32;
+    color: white;
 }
 
 .btns button:hover{
-    background-color: #3da0d9;
-    box-shadow: 0px 0px 4px #22597a inset;
+    background-color: #B38E5D;
+    box-shadow: 3px 3px 10px #D4C19C inset;
 }
 
 /*Boton y texto*/
@@ -265,16 +284,38 @@
 }
 
 .text{
-    width: 350px;
+    width: 1400px;
+    height: 500px;
     background-color: #0D4D72;
     padding: 20px;
     border-radius: 5px;
+    text-align: justify;
+    overflow: auto;
 }
 
 .text p{
-    font-family: "Roboto";
-    font-size: 15px;
+    font-family: "MontserratRegular";
+    font-size: 13px;
     color: #FFFFFF;
+    padding-bottom: 15px;
+}
+
+.text ul{
+    font-family: "MontserratRegular";
+    font-size: 13px;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+
+.text ul li{
+    margin: 0 0 0 3em;
+    padding: 0;
+}
+
+.text img{
+    display: block;
+    float: left;
+    padding-right: 10px;
 }
 
 /*Primer overlay*/
@@ -361,10 +402,136 @@
     opacity: 1;
 }
 
-/*Estilos Actividades*/
+/*Tercer overlay*/
+.overlay3 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay3.active {
+    visibility: visible;
+}
+
+.popup3 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup3 .btncerrar3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup3 .btncerrar3:hover {
+    font-size: 25px;
+}
+
+.popup3.active {
+    opacity: 1;
+}
+
+/*Cuarto overlay*/
+.overlay4 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay4.active {
+    visibility: visible;
+}
+
+.popup4 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup4 .btncerrar4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup4 .btncerrar4:hover {
+    font-size: 25px;
+}
+
+.popup4.active {
+    opacity: 1;
+}
+
+/*Quinto overlay*/
+.overlay5 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay5.active {
+    visibility: visible;
+}
+
+.popup5 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup5 .btncerrar5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup5 .btncerrar5:hover {
+    font-size: 25px;
+}
+
+.popup5.active {
+    opacity: 1;
+}
+
+/*ESTILOS ACTIVIDADES*/
 .activity{
     display: none;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 
@@ -375,7 +542,6 @@
 #activities{
     display: flex;
     width: 80%;
-    height: 500px;
     margin-left: 120px;
     align-items: center;
     justify-content: center;
@@ -383,15 +549,22 @@
     text-align: justify;
 }
 
-#activities p{
-    font-family: "Roboto";
-    font-size: 15px;
+#activities h3{
+    font-family: "GMXBold";
+    font-size: 20px;
+    padding-bottom: 20%;
 }
 
-/*Estilos Recursos*/
+#activities p{
+    font-family: "MontserratRegular";
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+/*ESTILOS RECURSOS*/
 .resource{
     display: none;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 
@@ -402,7 +575,6 @@
 #resources{
     display: flex;
     width: 80%;
-    height: 500px;
     margin-left: 120px;
     align-items: center;
     justify-content: center;
@@ -410,15 +582,36 @@
     text-align: justify;
 }
 
-#resources p{
-    font-family: "Roboto";
+#resources h3{
+    font-family: "GMXBold";
+    font-size: 20px;
+    padding-bottom: 15%;
+}
+
+/*#resources p{
+    font-family: "MontserratRegular";
+    font-size: 15px;
+}*/
+
+#resources ol{
+    font-weight: bold;
+    font-family: "MontserratRegular";
     font-size: 15px;
 }
 
-/*Estilos Evaluacion*/
+#resources ol li ol{
+    margin: 0 0 0 1.5em;
+    padding: 0;
+}
+
+#resources ol li ol li{
+    font-weight: normal;
+}
+
+/*ESTILOS EVALUACION*/
 .evaluation{
     display: none;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 
@@ -429,7 +622,6 @@
 #doc{
     display: flex;
     width: 80%;
-    height: 500px;
     margin-left: 120px;
     align-items: center;
     justify-content: center;
@@ -437,15 +629,36 @@
     text-align: justify;
 }
 
+#doc h3{
+    font-family: "GMXBold";
+    font-size: 20px;
+    padding-bottom: 15%;
+}
+
 #doc p{
-    font-family: "Roboto";
+    font-family: "MontserratRegular";
     font-size: 15px;
 }
 
-/*Estilos Cierre*/
+#doc table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: "MontserratRegular";
+    font-size: 15px;
+}
+
+#doc th, td{
+    width: 33%;
+    height: 50px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+/*ESTILOS CIERRE*/
 .conclusion{
     display: none;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 
@@ -456,23 +669,32 @@
 #end{
     display: flex;
     width: 80%;
-    height: 500px;
     margin-left: 120px;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    text-align: justify;
+    align-items: center;
+}
+
+#end h3{
+    font-family: "GMXBold";
+    font-size: 20px;
+    padding-bottom: 10%;
 }
 
 #end p{
-    font-family: "Roboto";
+    font-family: "MontserratRegular";
     font-size: 15px;
+    padding-bottom: 15px;
+    text-align: justify;
 }
 
-/*Estilos Cierre*/
+#end p:last-child{
+    align-items: flex-start;
+}
+
+/*ESTILOS BIBLIOGRAFIA*/
 .bibliography{
     display: none;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 
@@ -483,7 +705,6 @@
 #reference{
     display: flex;
     width: 80%;
-    height: 500px;
     margin-left: 120px;
     align-items: center;
     justify-content: center;
@@ -491,12 +712,28 @@
     text-align: justify;
 }
 
+#reference h3{
+    font-family: "GMXBold";
+    font-size: 20px;
+    padding-bottom: 10%;
+}
+
+#reference h4{
+    font-family: "MontserratRegular";
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+
+#reference:last-child h4{
+    padding-top: 30px;
+}
+
 #reference p{
-    font-family: "Roboto";
+    font-family: "MontserratRegular";
     font-size: 15px;
 }
 
-/*Estilos pie de pagina*/
+/*ESTILOS DE PIE DE PAGINA*/
 footer{
     width: 100%;
     position: fixed;
@@ -507,4 +744,6 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    font-family: "MontserratLight";
+    font-size: 11px;
 }
