@@ -34,7 +34,7 @@
     background-size: cover;
 }
 
-/*Fuentes*/
+/*FUENTES*/
 @font-face {
     font-family: "GMXBlack";
     src: url('fonts/GMX-Black.ttf');
@@ -87,13 +87,12 @@
 
 #logo {
     float: left;
-    width: 50%;
+    width: 700px;
     background: transparent;
     text-align: center;
 }
 
 #logo img {
-    width: auto;
     height: 64px;
     line-height: 66px;
     padding-right: 30px;
@@ -101,7 +100,7 @@
 
 #guide {
     float: left;
-    width: 50%;
+    width: 700px;
     height: 64px;
     background: transparent;
     text-align: center;
@@ -287,9 +286,9 @@ footer p {
 }
 
 .text {
-    width: 1400px;
+    width: 1000px;
     height: 500px;
-    background-color: #0D4D72;
+    background-color: #9F2241;
     padding: 20px;
     border-radius: 5px;
     text-align: justify;
