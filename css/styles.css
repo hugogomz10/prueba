@@ -1,72 +1,76 @@
 /*Estilos generales*/
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-.wrap{
+.wrap {
     width: 1400px;
     margin: 0px auto;
 }
 
-.background{
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.background {
     overflow: hidden;
 }
 
-.background:before{
+.background:before {
     content: ' ';
     display: block;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.5;
-    background-color: white;
-    /*background-image: url('../images/Fondo.jpeg');*/
+    opacity: 1;
+    background-image: url('https://trello.com/1/cards/6331e7536a7dc00045f96244/attachments/6331e7798a4a1c05d84c841d/previews/6331e77a8a4a1c05d84c8449/download/plantilla_bg_video.png');
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: bottom right;
     background-size: cover;
 }
 
 /*Fuentes*/
-@font-face{
+@font-face {
     font-family: "GMXBlack";
     src: url('fonts/GMX-Black.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: "GMXBold";
     src: url('fonts/GMX-Bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: "MontserratSBold";
     src: url('fonts/Montserrat-SemiBold.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: "MontserratBold";
     src: url('fonts/Montserrat-Bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: "MontserratRegular";
     src: url('fonts/Montserrat-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: "MontserratLight";
     src: url('fonts/Montserrat-Light.ttf');
     font-weight: normal;
@@ -74,34 +78,28 @@
 }
 
 /*Estilos barra de navegación*/
-.navbar{
+.navbar {
     width: 100%;
     height: 64px;
     background-color: #691C32;
-    font-weight: lighter;
     color: white;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
 }
 
-#logo{
+#logo {
     float: left;
-    width: 36%;
+    width: 50%;
     background: transparent;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
+    text-align: center;
 }
 
-#logo img{
+#logo img {
+    width: auto;
     height: 64px;
     line-height: 66px;
+    padding-right: 30px;
 }
 
-#guide{
+#guide {
     float: left;
     width: 50%;
     height: 64px;
@@ -109,7 +107,7 @@
     text-align: center;
 }
 
-#guide button{
+#guide button {
     font-family: "GMXBlack";
     font-size: 10px;
     display: inline-block;
@@ -122,134 +120,139 @@
     color: white;
 }
 
-#guide button:hover{
+#guide button:hover {
     background-color: #B38E5D;
     box-shadow: 3px 3px 10px #D4C19C inset;
 }
 
 /*ESTILOS INICIO*/
-.content{
+.content {
     display: none;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 230px;
 }
 
-.content.active{
+.content.active {
     display: block;
 }
 
-#title{
-    display: flex;
-    width: 80%;
-    height: 500px;
-    margin-left: 120px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#title {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin: 0px auto 0px auto;
 }
 
-#title h2{
+#title h2 {
     font-family: "GMXBlack";
     font-size: 35px;
     padding-bottom: 10px;
 }
 
-#title p{
+#title p {
     font-family: "MontserratRegular";
     font-size: 25px;
     text-align: center;
 }
 
+footer {
+    display: block;
+    width: 100%;
+    padding-top: 270px;
+}
+
+footer p {
+    font-family: "MontserratLight";
+    font-size: 11px;
+    text-align: center;
+}
+
 /*ESTILOS GUIA ACADEMICA*/
-.academic{
+.academic {
     display: none;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.academic.active{
+.academic.active {
     display: block;
 }
 
-#pdf{
+#pdf {
     width: 100%;
     height: 530px;
 }
 
 /*ESTILOS INTRODUCCION*/
-.intro{
+.intro {
     display: none;
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.intro.active{
+.intro.active {
     display: block;
 }
 
-#unit{
-    display: flex;
+#unit {
     width: 80%;
+    height: 500px;
     margin-left: 120px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+}
+
+#unit h3 {
+    font-family: "GMXBold";
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#unit p {
+    font-family: "MontserratRegular";
+    font-size: 13px;
+    padding-bottom: 15px;
     text-align: justify;
 }
 
-#unit h3{
-    font-family: "GMXBold";
-    font-size: 20px;
-    padding-bottom: 15px;
-}
-
-#unit p{
-    font-family: "MontserratRegular";
-    font-size: 13px;
-    padding-bottom: 15px;
-}
-
-#unit p:last-child{
+#unit p:last-child {
     padding-bottom: none;
 }
 
-#unit ol{
+#unit ol {
     font-family: "MontserratRegular";
     font-size: 13px;
 }
 
-#unit ol li{
+#unit ol li {
     margin: 0 0 0 3em;
     padding: 0;
 }
 
-/*Estilos de los Conceptos Clave*/
-.concept{
+/*ESTILOS DE LOS CONCEPTOS CLAVE*/
+.concept {
     display: none;
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.concept.active{
+.concept.active {
     display: block;
 }
 
-#concepts{
-    display: flex;
+#concepts {
     width: 80%;
+    height: 500px;
     margin-left: 120px;
-    flex-direction: column;
-    align-items: center;
 }
 
-#concepts h3{
+#concepts h3 {
     font-family: "GMXBold";
     font-size: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 /*Botones*/
-.btns{
+.btns {
     width: 100%;
     height: 500px;
     display: flex;
@@ -258,7 +261,7 @@
     align-items: center;
 }
 
-.btns button{
+.btns button {
     width: 300px;
     height: 80px;
     font-family: "MontserratBold";
@@ -270,20 +273,20 @@
     color: white;
 }
 
-.btns button:hover{
+.btns button:hover {
     background-color: #B38E5D;
     box-shadow: 3px 3px 10px #D4C19C inset;
 }
 
 /*Boton y texto*/
-.winds button{
+.winds button {
     float: right;
     background: none;
     border: none;
     cursor: pointer;
 }
 
-.text{
+.text {
     width: 1400px;
     height: 500px;
     background-color: #0D4D72;
@@ -293,26 +296,26 @@
     overflow: auto;
 }
 
-.text p{
+.text p {
     font-family: "MontserratRegular";
     font-size: 13px;
     color: #FFFFFF;
     padding-bottom: 15px;
 }
 
-.text ul{
+.text ul {
     font-family: "MontserratRegular";
     font-size: 13px;
     color: #FFFFFF;
     padding-bottom: 15px;
 }
 
-.text ul li{
+.text ul li {
     margin: 0 0 0 3em;
     padding: 0;
 }
 
-.text img{
+.text img {
     display: block;
     float: left;
     padding-right: 10px;
@@ -342,7 +345,7 @@
 }
 
 .popup .btncerrar {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "MontserratBold";
     font-size: 20px;
     line-height: 16px;
     display: block;
@@ -384,7 +387,7 @@
 }
 
 .popup2 .btncerrar2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "MontserratBold";
     font-size: 20px;
     line-height: 16px;
     display: block;
@@ -426,7 +429,7 @@
 }
 
 .popup3 .btncerrar3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "MontserratBold";
     font-size: 20px;
     line-height: 16px;
     display: block;
@@ -468,7 +471,7 @@
 }
 
 .popup4 .btncerrar4 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "MontserratBold";
     font-size: 20px;
     line-height: 16px;
     display: block;
@@ -510,7 +513,7 @@
 }
 
 .popup5 .btncerrar5 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "MontserratBold";
     font-size: 20px;
     line-height: 16px;
     display: block;
@@ -529,50 +532,48 @@
 }
 
 /*ESTILOS ACTIVIDADES*/
-.activity{
+.activity {
     display: none;
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.activity.active{
+.activity.active {
     display: block;
 }
 
-#activities{
-    display: flex;
+#activities {
     width: 80%;
+    height: 500px;
     margin-left: 120px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: justify;
 }
 
-#activities h3{
+#activities h3 {
     font-family: "GMXBold";
     font-size: 20px;
-    padding-bottom: 20%;
+    padding-bottom: 150px;
+    text-align: center;
 }
 
-#activities p{
+#activities p {
     font-family: "MontserratRegular";
     font-size: 15px;
     padding-bottom: 15px;
+    text-align: center;
 }
 
 /*ESTILOS RECURSOS*/
-.resource{
+.resource {
     display: none;
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.resource.active{
+.resource.active {
     display: block;
 }
 
-#resources{
+#resources {
     display: flex;
     width: 80%;
     margin-left: 120px;
@@ -582,10 +583,10 @@
     text-align: justify;
 }
 
-#resources h3{
+#resources h3 {
     font-family: "GMXBold";
     font-size: 20px;
-    padding-bottom: 15%;
+    padding-bottom: 150px;
 }
 
 /*#resources p{
@@ -593,54 +594,51 @@
     font-size: 15px;
 }*/
 
-#resources ol{
+#resources ol {
     font-weight: bold;
     font-family: "MontserratRegular";
     font-size: 15px;
 }
 
-#resources ol li ol{
+#resources ol li ol {
     margin: 0 0 0 1.5em;
     padding: 0;
 }
 
-#resources ol li ol li{
+#resources ol li ol li {
     font-weight: normal;
 }
 
 /*ESTILOS EVALUACION*/
-.evaluation{
+.evaluation {
     display: none;
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.evaluation.active{
+.evaluation.active {
     display: block;
 }
 
-#doc{
-    display: flex;
+#doc {
     width: 80%;
+    height: 500px;
     margin-left: 120px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: justify;
 }
 
-#doc h3{
+#doc h3 {
     font-family: "GMXBold";
     font-size: 20px;
-    padding-bottom: 15%;
+    padding-bottom: 150px;
+    text-align: center;
 }
 
-#doc p{
+#doc p {
     font-family: "MontserratRegular";
     font-size: 15px;
 }
 
-#doc table{
+#doc table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
@@ -648,102 +646,102 @@
     font-size: 15px;
 }
 
-#doc th, td{
+#doc th {
+    width: 33%;
+    height: 50px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: #9F2241;
+    color: white;
+}
+
+#doc td {
     width: 33%;
     height: 50px;
     border: 2px solid black;
     border-collapse: collapse;
 }
 
+#doc td#color {
+    width: 33%;
+    height: 50px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: #D4C19C;
+}
+
 /*ESTILOS CIERRE*/
-.conclusion{
+.conclusion {
     display: none;
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.conclusion.active{
+.conclusion.active {
     display: block;
 }
 
-#end{
-    display: flex;
+#end {
     width: 80%;
+    height: 500px;
     margin-left: 120px;
-    flex-direction: column;
-    align-items: center;
 }
 
-#end h3{
+#end h3 {
     font-family: "GMXBold";
     font-size: 20px;
-    padding-bottom: 10%;
+    padding-bottom: 75px;
+    text-align: center;
 }
 
-#end p{
+#end p {
     font-family: "MontserratRegular";
     font-size: 15px;
     padding-bottom: 15px;
     text-align: justify;
 }
 
-#end p:last-child{
+#end p:last-child {
     align-items: flex-start;
 }
 
 /*ESTILOS BIBLIOGRAFIA*/
-.bibliography{
+.bibliography {
     display: none;
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.bibliography.active{
+.bibliography.active {
     display: block;
 }
 
-#reference{
-    display: flex;
+#reference {
     width: 80%;
+    height: 500px;
     margin-left: 120px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: justify;
 }
 
-#reference h3{
+#reference h3 {
     font-family: "GMXBold";
     font-size: 20px;
-    padding-bottom: 10%;
+    padding-bottom: 100px;
+    text-align: center;
 }
 
-#reference h4{
+#reference h4 {
     font-family: "MontserratRegular";
     font-size: 17px;
     padding-bottom: 15px;
+    text-align: center;
 }
 
-#reference:last-child h4{
+#reference:last-child h4 {
     padding-top: 30px;
 }
 
-#reference p{
+#reference p {
     font-family: "MontserratRegular";
     font-size: 15px;
-}
-
-/*ESTILOS DE PIE DE PAGINA*/
-footer{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    z-index: 999999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     text-align: center;
-    font-family: "MontserratLight";
-    font-size: 11px;
 }

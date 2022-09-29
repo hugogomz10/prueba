@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <title>Propuesta</title>
 </head>
 
@@ -47,6 +48,13 @@
                     Educación Media Superior (MCCEMS)</p>
             </div>
         </div>
+        <footer>
+            <p>
+                <b>&copy; 2022 Universidad Autónoma de Querétaro - Centro de Investigación en Tecnología
+                    Educativa<br>Tel.(442) 1921200 Ext. 63510 e-mail: cite@uaq.mx
+                </b>
+            </p>
+        </footer>
     </section>
 
     <!--GUIA ACADEMICA-->
@@ -528,29 +536,31 @@
         <div class="wrap">
             <div id="resources">
                 <h3>Recursos</h3>
-                <ol>
-                    <li style="font-weight: bold;">Textos
-                        <ol type="a">
-                            <li><a href="https://drive.google.com/file/d/1yIHQU_VjW6b2VsERwn_DqV26o6lUXlSR/view">Progresiones
-                                    MCCEM</a></li>
-                            <li><a href="https://drive.google.com/file/d/1kAIVaIg98fo_BxTlvU9zMZY1uL0XRPY1/view">Rediseño
-                                    del MCCEM 2019-2022</a></li>
-                        </ol>
-                    </li>
-                    <li style="font-weight: bold;">Videos
-                        <ol type="a">
-                            <li><a href="#">Vídeo Características del MCCEMS</a></li>
-                            <li><a href="#">Vídeo Elementos del MCCEMS</a></li>
-                        </ol>
-                    </li>
-                    <li style="font-weight: bold;">Materiales gráficos
-                        <ol type="a">
-                            <li><a href="#">Presentación sobre los Recursos sociocognitivos</a></li>
-                            <li><a href="https://drive.google.com/file/d/1iwfo-sDOBhqxArU_FC05Sg73yxnKgNis/view">Programa
-                                    Aula, Escuela y Comunidad</a></li>
-                        </ol>
-                    </li>
-                </ol>
+                <div id="list">
+                    <ol>
+                        <li style="font-weight: bold;">Textos
+                            <ol type="a">
+                                <li><a href="https://drive.google.com/file/d/1yIHQU_VjW6b2VsERwn_DqV26o6lUXlSR/view">Progresiones
+                                        MCCEM</a></li>
+                                <li><a href="https://drive.google.com/file/d/1kAIVaIg98fo_BxTlvU9zMZY1uL0XRPY1/view">Rediseño
+                                        del MCCEM 2019-2022</a></li>
+                            </ol>
+                        </li>
+                        <li style="font-weight: bold;">Videos
+                            <ol type="a">
+                                <li><a href="#">Vídeo Características del MCCEMS</a></li>
+                                <li><a href="#">Vídeo Elementos del MCCEMS</a></li>
+                            </ol>
+                        </li>
+                        <li style="font-weight: bold;">Materiales gráficos
+                            <ol type="a">
+                                <li><a href="#">Presentación sobre los Recursos sociocognitivos</a></li>
+                                <li><a href="https://drive.google.com/file/d/1iwfo-sDOBhqxArU_FC05Sg73yxnKgNis/view">Programa
+                                        Aula, Escuela y Comunidad</a></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
             </div>
         </div>
     </section>
@@ -567,12 +577,12 @@
                         <th>Instrumento de Evaluación</th>
                     </tr>
                     <tr>
-                        <td>Actividad 1.1. Foro de reflexión sobre el MCCEMS</td>
+                        <td id="color">Actividad 1.1. Foro de reflexión sobre el MCCEMS</td>
                         <td>5%</td>
                         <td>Lista de cotejo</td>
                     </tr>
                     <tr>
-                        <td>Actividad 1.2. Acercamientos a las progresiones de los recursos de formación sociocognitivo
+                        <td id="color">Actividad 1.2. Acercamientos a las progresiones de los recursos de formación sociocognitivo
                             de lenguaje y comunicación 1</td>
                         <td>5%</td>
                         <td>Lista de cotejo</td>
@@ -647,11 +657,9 @@
         </div>
     </section>
 
+    <div class="clearfix"></div>
     <!--PIE DE PAGINA-->
-    <footer>
-        <b><p>&copy; 2022 Universidad Autónoma de Querétaro - Centro de Investigación en Tecnología Educativa</p>
-        <p>Tel.(442) 1921200 Ext. 63510 e-mail: cite@uaq.mx</p></b>
-    </footer>
+    
 
     <script src="./scripts/script.js"></script>
 </body>
