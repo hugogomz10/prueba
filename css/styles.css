@@ -9,7 +9,7 @@
     margin: 0px auto;
 }
 
-.clearfix{
+.clearfix {
     float: none;
     clear: both;
 }
@@ -89,12 +89,13 @@
     float: left;
     width: 520px;
     background: transparent;
-    text-align: left;
+    text-align: center;
+    padding: 5px 0px 4px 0px;
 }
 
 #logo img {
-    height: 64px;
-    line-height: 66px;
+    height: 55px;
+    margin: 0px auto;
 }
 
 #guide {
@@ -181,6 +182,10 @@ footer p {
     height: 530px;
 }
 
+#pdf iframe {
+    border: 1px solid #B38E5D;
+}
+
 /*ESTILOS INTRODUCCION*/
 .intro {
     display: none;
@@ -196,6 +201,7 @@ footer p {
     width: 80%;
     height: 500px;
     margin-left: 120px;
+    overflow: auto;
 }
 
 #unit h3 {
@@ -214,6 +220,14 @@ footer p {
 
 #unit p:last-child {
     padding-bottom: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 #unit ol {
@@ -255,8 +269,9 @@ footer p {
     width: 100%;
     height: 500px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -310,6 +325,18 @@ footer p {
 }
 
 .text ul li {
+    margin: 0 0 0 3em;
+    padding: 0;
+}
+
+.text ol {
+    font-family: "MontserratRegular";
+    font-size: 13px;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+
+.text ol li {
     margin: 0 0 0 3em;
     padding: 0;
 }
@@ -530,6 +557,132 @@ footer p {
     opacity: 1;
 }
 
+/*Sexto overlay*/
+.overlay6 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay6.active {
+    visibility: visible;
+}
+
+.popup6 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup6 .btncerrar6 {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup6 .btncerrar6:hover {
+    font-size: 25px;
+}
+
+.popup6.active {
+    opacity: 1;
+}
+
+/*Septimo overlay*/
+.overlay7 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay7.active {
+    visibility: visible;
+}
+
+.popup7 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup7 .btncerrar7 {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup7 .btncerrar7:hover {
+    font-size: 25px;
+}
+
+.popup7.active {
+    opacity: 1;
+}
+
+/*Octavo overlay*/
+.overlay8 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay8.active {
+    visibility: visible;
+}
+
+.popup8 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup8 .btncerrar8 {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup8 .btncerrar8:hover {
+    font-size: 25px;
+}
+
+.popup8.active {
+    opacity: 1;
+}
+
 /*ESTILOS ACTIVIDADES*/
 .activity {
     display: none;
@@ -542,24 +695,53 @@ footer p {
 }
 
 #activities {
-    width: 80%;
+    width: 90%;
     height: 500px;
-    margin-left: 120px;
+    margin: 0px auto;
+    overflow: auto;
 }
 
 #activities h3 {
     font-family: "GMXBold";
     font-size: 20px;
-    padding-bottom: 150px;
+    padding-bottom: 15px;
     text-align: center;
+}
+
+#activities h4 {
+    font-family: "MontserratRegular";
+    font-size: 15px;
+    text-align: justify;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #activities p {
     font-family: "MontserratRegular";
     font-size: 15px;
+    padding-top: 15px;
     padding-bottom: 15px;
-    text-align: center;
+    text-align: justify;
 }
+
+#activities ol {
+    font-family: "MontserratRegular";
+    font-size: 15px;
+}
+
+#activities ol li{
+    margin: 0 0 0 3em;
+    padding: 0;
+}
+
+#activities #nonumber{
+    list-style-type: none;
+}
+
+/*#activities ol li ol {
+    margin: 0 0 0 1.5em;
+    padding: 0;
+}*/
 
 /*ESTILOS RECURSOS*/
 .resource {

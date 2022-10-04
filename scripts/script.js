@@ -143,6 +143,22 @@ pressButton9.addEventListener('click', function(){
     section8.classList.remove('active');
 });
 
+//BOTON DE LOS APRENDIZAJES
+let hideText_btn = document.getElementById('hideText_btn');
+let hideText = document.getElementById('hideText');
+
+hideText_btn.addEventListener('click', toggleText);
+function toggleText() {
+    hideText.classList.toggle('show');
+
+    if(hideText.classList.contains('show')) {
+        hideText_btn.innerHTML = 'Ocultar los Aprendizajes esperados en el Módulo 1:';
+    } 
+    else {
+        hideText_btn.innerHTML = 'Mostrar los Aprendizajes esperados en el Módulo 1:';
+    }
+}
+
 //BOTONES DE CONCEPTOS CLAVE
 //Boton Primer Concepto
 var btnAbrirPopup = document.getElementById('first'),
@@ -222,4 +238,52 @@ btnAbrirPopup5.addEventListener('click', function(){
 btnCerrarPopup5.addEventListener('click', function(){
     overlay5.classList.remove('active');
     popup5.classList.remove('active');
+});
+
+//Boton Sexto Concepto
+var btnAbrirPopup6 = document.getElementById('sixth'),
+    overlay6 = document.getElementById('overlay6'),
+    popup6 = document.getElementById('popup6'),
+    btnCerrarPopup6 = document.getElementById('btncerrar6');
+
+btnAbrirPopup6.addEventListener('click', function(){
+    overlay6.classList.add('active');
+    popup6.classList.add('active');
+});
+
+btnCerrarPopup6.addEventListener('click', function(){
+    overlay6.classList.remove('active');
+    popup6.classList.remove('active');
+});
+
+//Boton Septimo Concepto
+var btnAbrirPopup7 = document.getElementById('seventh'),
+    overlay7 = document.getElementById('overlay7'),
+    popup7 = document.getElementById('popup7'),
+    btnCerrarPopup7 = document.getElementById('btncerrar7');
+
+btnAbrirPopup7.addEventListener('click', function(){
+    overlay7.classList.add('active');
+    popup7.classList.add('active');
+});
+
+btnCerrarPopup7.addEventListener('click', function(){
+    overlay7.classList.remove('active');
+    popup7.classList.remove('active');
+});
+
+//Boton Octavo Concepto
+var btnAbrirPopup8 = document.getElementById('eighth'),
+    overlay8 = document.getElementById('overlay8'),
+    popup8 = document.getElementById('popup8'),
+    btnCerrarPopup8 = document.getElementById('btncerrar8');
+
+btnAbrirPopup8.addEventListener('click', function(){
+    overlay8.classList.add('active');
+    popup8.classList.add('active');
+});
+
+btnCerrarPopup8.addEventListener('click', function(){
+    overlay8.classList.remove('active');
+    popup8.classList.remove('active');
 });
