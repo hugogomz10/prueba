@@ -144,20 +144,20 @@ pressButton9.addEventListener('click', function(){
 });
 
 //BOTON DE LOS APRENDIZAJES
-let hideText_btn = document.getElementById('hideText_btn');
-let hideText = document.getElementById('hideText');
+var btnAbrirIntro = document.getElementById('hideText_btn'),
+    overlayIn = document.getElementById('overlayIn'),
+    popupIn = document.getElementById('popupIn'),
+    btnCerrarIntro = document.getElementById('btncerrarIn');
 
-hideText_btn.addEventListener('click', toggleText);
-function toggleText() {
-    hideText.classList.toggle('show');
+btnAbrirIntro.addEventListener('click', function(){
+    overlayIn.classList.add('active');
+    popupIn.classList.add('active');
+});
 
-    if(hideText.classList.contains('show')) {
-        hideText_btn.innerHTML = 'Ocultar los Aprendizajes esperados en el Módulo 1:';
-    } 
-    else {
-        hideText_btn.innerHTML = 'Mostrar los Aprendizajes esperados en el Módulo 1:';
-    }
-}
+btnCerrarIntro.addEventListener('click', function(){
+    overlayIn.classList.remove('active');
+    popupIn.classList.remove('active');
+});
 
 //BOTONES DE CONCEPTOS CLAVE
 //Boton Primer Concepto
@@ -286,4 +286,36 @@ btnAbrirPopup8.addEventListener('click', function(){
 btnCerrarPopup8.addEventListener('click', function(){
     overlay8.classList.remove('active');
     popup8.classList.remove('active');
+});
+
+//Boton Noveno Concepto
+var btnAbrirPopup9 = document.getElementById('ninth'),
+    overlay9 = document.getElementById('overlay9'),
+    popup9 = document.getElementById('popup9'),
+    btnCerrarPopup9 = document.getElementById('btncerrar9');
+
+btnAbrirPopup9.addEventListener('click', function(){
+    overlay9.classList.add('active');
+    popup9.classList.add('active');
+});
+
+btnCerrarPopup9.addEventListener('click', function(){
+    overlay9.classList.remove('active');
+    popup9.classList.remove('active');
+});
+
+//Boton Decimo Concepto
+var btnAbrirPopup10 = document.getElementById('tenth'),
+    overlay10 = document.getElementById('overlay10'),
+    popup10 = document.getElementById('popup10'),
+    btnCerrarPopup10 = document.getElementById('btncerrar10');
+
+btnAbrirPopup10.addEventListener('click', function(){
+    overlay10.classList.add('active');
+    popup10.classList.add('active');
+});
+
+btnCerrarPopup10.addEventListener('click', function(){
+    overlay10.classList.remove('active');
+    popup10.classList.remove('active');
 });

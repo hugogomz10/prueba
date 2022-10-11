@@ -128,7 +128,7 @@
 /*ESTILOS INICIO*/
 .content {
     display: none;
-    padding-top: 230px;
+    padding-top: 180px;
 }
 
 .content.active {
@@ -142,10 +142,18 @@
     margin: 0px auto 0px auto;
 }
 
-#title h2 {
+#title h1 {
     font-family: "GMXBlack";
     font-size: 35px;
     padding-bottom: 10px;
+    color: #B38E5D;
+}
+
+#title h2 {
+    font-family: "GMXBlack";
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: #D4C19C;
 }
 
 #title p {
@@ -157,7 +165,7 @@
 footer {
     display: block;
     width: 100%;
-    padding-top: 270px;
+    padding-top: 200px;
 }
 
 footer p {
@@ -191,6 +199,7 @@ footer p {
     display: none;
     padding-top: 50px;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 .intro.active {
@@ -200,8 +209,9 @@ footer p {
 #unit {
     width: 80%;
     height: 500px;
-    margin-left: 120px;
+    margin: 0px auto;
     overflow: auto;
+    padding: 0px 10px;
 }
 
 #unit h3 {
@@ -230,9 +240,80 @@ footer p {
     display: block;
 }
 
-#unit ol {
+.readMore_btn {
+    width: 500px;
+    height: 50px;
+    font-family: "MontserratSBold";
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #D4C19C;
+    color: black;
+}
+
+/*Overlay Aprendizajes*/
+.overlayIn {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlayIn.active {
+    visibility: visible;
+}
+
+.popupIn {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popupIn .btncerrarIn {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+    float: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.popupIn .btncerrarIn:hover {
+    color: #691C32;
+}
+
+.popupIn.active {
+    opacity: 1;
+}
+
+.textIn {
+    width: 1000px;
+    height: auto;
+    background-color: #9F2241;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: justify;
+    overflow: auto;
     font-family: "MontserratRegular";
+    color: white;
+}
+
+#unit ol {
     font-size: 13px;
+    text-align: justify;
+    padding: 10px 50px;
 }
 
 #unit ol li {
@@ -254,7 +335,7 @@ footer p {
 #concepts {
     width: 80%;
     height: 500px;
-    margin-left: 120px;
+    margin: 0px auto;
 }
 
 #concepts h3 {
@@ -262,6 +343,13 @@ footer p {
     font-size: 20px;
     padding-bottom: 10px;
     text-align: center;
+}
+
+#concepts a {
+    font-family: "MontserratBold";
+    font-size: 13px;
+    text-decoration: none;
+    color: #B38E5D;
 }
 
 /*Botones*/
@@ -283,8 +371,8 @@ footer p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #691C32;
-    color: white;
+    background-color: #D4C19C;
+    color: black;
 }
 
 .btns button:hover {
@@ -347,6 +435,15 @@ footer p {
     padding-right: 10px;
 }
 
+.contrast {
+    background-color: #B38E5D;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+
 /*Primer overlay*/
 .overlay {
     background: rgba(0, 0, 0, .6);
@@ -382,7 +479,7 @@ footer p {
 }
 
 .popup .btncerrar:hover {
-    font-size: 25px;
+    color: #691C32;
 }
 
 .popup.active {
@@ -424,7 +521,7 @@ footer p {
 }
 
 .popup2 .btncerrar2:hover {
-    font-size: 25px;
+    color: #691C32;
 }
 
 .popup2.active {
@@ -466,7 +563,7 @@ footer p {
 }
 
 .popup3 .btncerrar3:hover {
-    font-size: 25px;
+    color: #691C32;
 }
 
 .popup3.active {
@@ -508,7 +605,7 @@ footer p {
 }
 
 .popup4 .btncerrar4:hover {
-    font-size: 25px;
+    color: #691C32;
 }
 
 .popup4.active {
@@ -550,7 +647,7 @@ footer p {
 }
 
 .popup5 .btncerrar5:hover {
-    font-size: 25px;
+    color: #691C32;
 }
 
 .popup5.active {
@@ -592,7 +689,7 @@ footer p {
 }
 
 .popup6 .btncerrar6:hover {
-    font-size: 25px;
+    color: #691C32;
 }
 
 .popup6.active {
@@ -634,7 +731,7 @@ footer p {
 }
 
 .popup7 .btncerrar7:hover {
-    font-size: 25px;
+    color: #691C32;
 }
 
 .popup7.active {
@@ -676,10 +773,52 @@ footer p {
 }
 
 .popup8 .btncerrar8:hover {
-    font-size: 25px;
+    color: #691C32;
 }
 
 .popup8.active {
+    opacity: 1;
+}
+
+/*Noveno overlay*/
+.overlay9 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay9.active {
+    visibility: visible;
+}
+
+.popup9 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup9 .btncerrar9 {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup9 .btncerrar9:hover {
+    color: #691C32;
+}
+
+.popup9.active {
     opacity: 1;
 }
 
@@ -704,16 +843,18 @@ footer p {
 #activities h3 {
     font-family: "GMXBold";
     font-size: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 70px;
     text-align: center;
 }
 
 #activities h4 {
     font-family: "MontserratRegular";
-    font-size: 15px;
+    font-size: 17px;
     text-align: justify;
     font-weight: bold;
     text-decoration: underline;
+    padding-top: 30px;
+    padding-bottom: 15px;
 }
 
 #activities p {
@@ -757,7 +898,7 @@ footer p {
 #resources {
     display: flex;
     width: 80%;
-    margin-left: 120px;
+    margin: 0px auto;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -767,13 +908,8 @@ footer p {
 #resources h3 {
     font-family: "GMXBold";
     font-size: 20px;
-    padding-bottom: 150px;
+    padding-bottom: 120px;
 }
-
-/*#resources p{
-    font-family: "MontserratRegular";
-    font-size: 15px;
-}*/
 
 #resources ol {
     font-weight: bold;
@@ -804,7 +940,7 @@ footer p {
 #doc {
     width: 80%;
     height: 500px;
-    margin-left: 120px;
+    margin: 0px auto;
 }
 
 #doc h3 {
@@ -865,7 +1001,7 @@ footer p {
 #end {
     width: 80%;
     height: 500px;
-    margin-left: 120px;
+    margin: 0px auto;
 }
 
 #end h3 {
@@ -886,6 +1022,13 @@ footer p {
     align-items: flex-start;
 }
 
+#end a {
+    font-family: "MontserratBold";
+    font-size: 13px;
+    text-decoration: none;
+    color: #B38E5D;
+}
+
 /*ESTILOS BIBLIOGRAFIA*/
 .bibliography {
     display: none;
@@ -900,7 +1043,7 @@ footer p {
 #reference {
     width: 80%;
     height: 500px;
-    margin-left: 120px;
+    margin: 0px auto;
 }
 
 #reference h3 {
